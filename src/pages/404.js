@@ -1,14 +1,15 @@
 import React from 'react'
 import Layout from '../components/Layout'
 
-export default function NotFound() {
+const NotFound = () => {
   return (
     <Layout>
-
-    <div>
+      <div>
         <h2>404</h2>
-        <p>Sorry, that page does not exist</p>
-    </div>
+        <p>Sorry, that page doesn't exist (yet)!</p>
+      </div>
     </Layout>
-  )
+  );
 }
+ 
+export default NotFound
