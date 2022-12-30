@@ -8,10 +8,19 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
-  plugins: [],
+  plugins: [
+    "gatsby-transformer-remark",
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `projects`,
+        path: `${__dirname}/src/projects/`,
+      },
+    },
+  ],
   siteMetadata: {
     title: "portfolio",
     description: "web dev portfolio",
-    copyright: "copyright 2022 kyron321"
-  }
-}
+    copyright: "copyright 2022 kyron321",
+  },
+};
