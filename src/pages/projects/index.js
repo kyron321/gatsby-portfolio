@@ -27,16 +27,17 @@ const projects = data.allMarkdownRemark.nodes
 }
 
 export const query = graphql`
-  query {
-    allMarkdownRemark {
-      nodes {
-        frontmatter {
-          slug
-          stack
-          title
-        }
-        id
+{
+  allMarkdownRemark(sort: {frontmatter: {date: DESC}}) {
+    nodes {
+      frontmatter {
+        slug
+        stack
+        title
+        date
       }
+      id
     }
   }
-`;
+}
+`
