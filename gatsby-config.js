@@ -9,4 +9,9 @@
  */
 module.exports = {
   plugins: [],
+  siteMetadata: {
+    title: "portfolio",
+    description: "web dev portfolio",
+    copyright: "copyright 2022 kyron321"
+  }
 }
