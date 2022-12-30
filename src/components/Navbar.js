@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Navbar() {
   const data = useStaticQuery(graphql`
-  query MyQuery {
+  query{
     site {
       siteMetadata {
         title
@@ -11,9 +11,7 @@ export default function Navbar() {
     }
   }
   `)
-
-  const {title} = data.site.siteMetadata
-
+  const { title } = data.site.siteMetadata
   return (
     <nav>
         <h1>Portfolio</h1>
