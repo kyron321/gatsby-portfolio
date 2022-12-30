@@ -22,5 +22,6 @@ module.exports = {
     title: "portfolio",
     description: "web dev portfolio",
     copyright: "copyright 2022 kyron321",
+    contact: "kds060902@outlook.com"
   },
 };
